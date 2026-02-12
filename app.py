@@ -3,6 +3,18 @@ import streamlit as st
 
 st.set_page_config(page_title="Образователна викторина", page_icon="📚")
 
+# Custom CSS for dark blue background
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #001f3f;
+    }
+    .stMarkdown, .stRadio > label, .stButton > button {
+        color: white;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 
 st.title("📚 Образователна викторина")
 st.write("Отговорете на въпросите по География и История")
